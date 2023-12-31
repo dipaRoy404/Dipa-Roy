@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Mazius-Extraitalic';
+    src: url('../fonts/Mazius-Extraitalic.otf');
+}
+
+#js-green {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: lightseagreen;
+    z-index: 999;
+}
+
+#js-loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgb(27, 27, 27);
+    color: white;
+    z-index: 999;
+}
+
+#js-loader #top-heading {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#top-heading h5 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 540;
+}
+
+#js-loader h1 {
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    font-size: 5vw;
+    font-weight: 510;
+    padding: 0px 10%;
+    overflow: hidden;
+}
+
+#js-loader h1 span {
+    display: inline-block;
+}
+
+#js-loader h1 span p {
+    display: inline;
+}
+
+.special-name {
+    font-family: Mazius-Extraitalic;
+    color: lightseagreen;
+    font-weight: 900;
+}
+
+.js-revel .js-parent {
+    display: block;
+    overflow: hidden;
+}
+
+.js-revel .js-parent .js-child {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -----------Preloader---------- */
+.preloader {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.preloader_wrap {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.preloader_one,
+.preloader_two {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.preloader_one {
+    animation: spin1 2.3s infinite linear;
+    -webkit-animation: spin1 2.3s infinite linear;
+}
+
+.preloader_two {
+    animation: spin2 2.3s infinite linear;
+    -webkit-animation: spin2 2.3s infinite linear;
+    transform: rotate(45deg);
+}
+
+.one,
+.five {
+    border-top: 1px solid #fff;
+}
+
+.two,
+.six {
+    border-right: 1px solid #fff;
+}
+
+.three,
+.seven {
+    border-bottom: 1px solid #fff;
+}
+
+.four,
+.eight {
+    border-left: 1px solid #d9d9d9;
+}
+
+.one {
+    top: -20px;
+}
+
+.two {
+    right: -20px;
+}
+
+.three {
+    bottom: -20px;
+}
+
+.four {
+    left: -20px;
+}
+
+.five {
+    right: -14px;
+    bottom: 14px;
+}
+
+.six {
+    Left: 14px;
+    top: 14px;
+}
+
+.seven {
+    Left: -14px;
+    top: 14px;
+}
+
+.eight {
+    right: 14px;
+    top: -14px;
+}
+
+
+@keyframes spin1 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin2 {
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: rotate(405deg);
+    }
+}
